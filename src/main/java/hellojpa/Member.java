@@ -9,9 +9,21 @@ public class Member {
     @Id
     private Long id;
     private String name;
+    private Long studentId;
+
+    public Member() {
+    }
 
     public Long getId() {
         return id;
+    }
+
+    public Long getLong() {
+        return studentId;
+    }
+
+    public void setLong(Long aLong) {
+        studentId = aLong;
     }
 
     public void setId(Long id) {
