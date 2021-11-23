@@ -16,12 +16,12 @@ public class JpaMain {
 
         try{
             //비영속
-//            Member member1 = new Member();
-//            member1.setId(100L);
-//            member1.setName("WOONGSTAR");
-//
-//            //영속
-//            em.persist(member1);
+            Member member1 = new Member();
+            member1.setId(100L);
+            member1.setName("WOONGSTAR");
+
+            //영속
+            em.persist(member1);
             tx.commit();
         } catch (Exception e){
             tx.rollback();
